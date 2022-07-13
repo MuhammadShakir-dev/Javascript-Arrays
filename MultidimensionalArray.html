@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multidimensional Array in js</title>
+    <script>
+      /* 
+                        MUltidimensional Array in javascript.
+
+                        what is an array?
+                             an array is a collection of data.
+
+                        what is a multidimensional array?
+                             a multidimensional array is a collection of data.
+
+                        let's do some examples for better understanding of multidimensional array.
+        */
+
+      var ary = [
+        ["Shakir", "BS-SE", "SMIU", "GDSC-Lead (Selected)"],
+        ["Wajid", "BC-CS", "SMIU", "GDCS-Lead"],
+      ];
+      document.write("<table border='1px' cellspacing='0' >");
+      for (a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+
+        for (b = 0; b < 4; b++) {
+          document.write("<td>" + ary[a][b] + "<br>" + "</td>");
+        }
+        document.write("<tr>");
+      }
+      document.write("</table>");
+
+      document.write("Lenght of this array is :" + ary.length);
+    </script>
+  </head>
+  <body></body>
+</html>
