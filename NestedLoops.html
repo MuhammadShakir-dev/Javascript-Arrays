@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Loops in js</title>
+    <script>
+      /*
+                       NESTED LOOPS IN JAVASCRIPT.
+
+                       what is nested loops in javascript?
+                          nested loops are used to iterate over a collection of data.
+                       syntax.
+                          for (var i = 0; i < 10; i++) {
+                              for (var j = 0; j < 10; j++) {
+                                  // do something
+                              }
+                          }
+
+                      task no 1
+
+                      write a program to print the following pattern.
+                      *
+                      * *
+                      * * *
+                      * * * *
+                      * * * * *
+                      * * * * * *
+                      * * * * * * *
+                      * * * * * * * *
+                      * * * * * * * * *
+                      * * * * * * * * * *
+
+                      task no 2.
+                      write a program that print 1 to 100 counting in a tabular format..
+
+                      task no 3.
+                      print the reverse order of task no 1.
+                      *
+                    * *
+                  * * *
+                * * * *
+              * * * * *
+              
+                     task no 4.
+                     write a program to print.
+                     1
+                     1 2
+                     1 2 3
+                     1 2 3 4
+                     1 2 3 4 5
+                     1 2 3 4 5 6
+
+      */
+      // task no 1.
+
+      for (a = 1; a <= 12; a++) {
+        for (b = 2; b <= a; b++) {
+          document.write("*" + "  ");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      // TASK NO 2.
+
+      for (a = 1; a <= 100; a = a + 10) {
+        for (b = a; b < a + 10; b++) {
+          document.write(b + "  ");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      //Task no 4.
+
+      for (i = 1; i <= 6; i++) {
+        for (j = 1; j <= i; j++) {
+          document.write(j + "    ");
+        }
+        document.write("<br>");
+      }
+      document.write("<br>");
+
+      for (k = 1; k <= 6; k++) {
+        for (b = 6; b >= k; b--) {
+          document.write(b + "    ");
+        }
+        document.write("<br>");
+      }
+
+      for (k = 1; k <= 6; k++) {
+        document.write("<br>");
+        for (b = 6; b >= k; b--) {
+          document.write("*" + "  ");
+        }
+      }
+
+      document.write("<br>");
+
+      for (k = 6; k >= 1; k--) {
+        for (b = 1; b <= k; b++) {
+          document.write(b + "    ");
+        }
+        document.write("<br>");
+      }
+
+      document.write("<br>");
+      for (a = 1; a <= 5; a++) {
+        document.write("<br>");
+        for (b = 2; b <= a; b++) {
+          document.write(a + "    ");
+        }
+      }
+      document.write("<br>");
+      for (a = 1; a <= 5; a++) {
+        document.write("<br>");
+        for (b = 1; b <= a; b++) {
+          document.write(a + "    ");
+        }
+      }
+      document.write("<br>");
+      for (a = 5; a >= 1; a--) {
+        document.write("<br>");
+        for (b = 1; b <= a; b++) {
+          document.write(a + "");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

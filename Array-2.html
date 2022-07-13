@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array part 2</title>
+    <script>
+      /*
+                    Lets finish you basic understanding with array.
+
+                    let's have a look on another method of creating arrays in javascript.
+
+                    var ary = new Array("Hello", "This", "Muhammad","Shakir");
+                    
+                    or
+
+                    var ary = new Array();
+                    and for inserting values in that.
+                    ary[0] = 10;
+                    ary[1] = 12;
+                    ary[7] = 15;
+
+                    in this way you can first initialize a variable as an arry but not inserting values in that 
+                    you can easily instert unlimited values when ever you want to insert.
+
+
+                    or
+
+                    var ary = new Array(5)
+                    ary[0] = 10;
+                    ary[1] = 12;
+                    ary[7] = 15;
+
+                    you can see a 5 after array this means that in future you only put 6 values in this array
+                    if you insert more than 6 values then it will show you an error.
+
+
+        */
+      var ary = new Array(4);
+      for (g = 0; g < 5; g++) {
+        ary[g] = prompt("Enter a value :");
+      }
+     document.write("<ul>")
+      for (b = 0; b < 5; b++) {
+        document.write("<li>" + ary[b] + "<br>" + "</li>");
+      }
+      document.write("</ul>")
+    </script>
+  </head>
+  <body></body>
+</html>
