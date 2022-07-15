@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array concat & join</title>
+    <script>
+      /*
+                Array concat & join in javascript.
+
+                WHATS IS ARRAY CONCAT?
+                array concat: joins two or more arrays.
+                syntax.
+                    var newArray = array1.concat(array2, array3, ...);
+                
+                WHATS IS ARRAY JOIN?
+                array join: joins all elements of an array into a string.
+                syntax.
+                    var newString = arrayName.join(separator);
+
+                Now there are two ways  to concat arrays in javascript.
+                1 - Method.
+                var a = ["DS","CS","IS"];
+                var b =a.concat("IT");
+                document.write(b);
+
+                2 - Method.
+                var a = ["DS","CS","IS"];
+                var b = ["IT","EC"];
+                var c = a.concat(b);
+                doument.write(c);
+                
+                join convrets all the array elements into a string.
+
+                var a = ["DS","CS","IS"];
+                var b = ["IT","EC"];
+                var d = c.join("-");
+                document.write(d);
+                
+                */
+
+      var a = ["DS", "DSA", "OS"];
+      var b = ["PF", "AI"];
+      var c = a.concat(b);
+      document.write(c + "<br><br>");
+
+      var d = ["Muhammad", "Shakir"];
+      var e = ["Dev"];
+      var f = d.concat(e);
+      var g = f.join("-");
+      document.write(g);
+    </script>
+  </head>
+  <body></body>
+</html>
