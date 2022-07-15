@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array indexof & lastindexof</title>
+    <script>
+      /*
+               Array indexOf() & lastIndexOf() in javascript.
+
+               whats is indexOf() & lastIndexOf() in javascript?
+                indexOf(): returns the index of the first occurrence of a value in an array.
+                lastIndexOf(): returns the index of the last occurrence of a value in an array.
+
+                syntax.
+                    Array.indexOf(searchElement, fromIndex);
+                    Array.lastIndexOf(searchElement, fromIndex);
+          
+                    when you enter a value that is not present in the array then index of wiil return = " -1 "
+
+        */
+
+      var a = ["anum", "shiza", "shakir", "sunila", "anum"];
+      var b = a.indexOf("anum", 1);
+      document.write("Yes this name is also present on the index no of :" + b + "<br><br>");
+      // indexof run in forward direction.
+
+      var c =  a.lastIndexOf("anum",3);
+      document.write("Yes this name is also present on the index no of :" + c);
+      // lastindexof run in backworf direction.
+    </script>
+  </head>
+  <body></body>
+</html>
