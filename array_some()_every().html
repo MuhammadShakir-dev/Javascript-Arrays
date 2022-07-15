@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>some() & every in js</title>
+    <script>
+       /*
+                  some() & every() in javascript.
+
+                  whats is some() & every() in javascript?
+                   some(): returns true if at least one element in the array satisfies the provided testing function.
+                   every(): returns true if all elements in the array satisfy the provided testing function.
+                   syntax.
+                       Array.some(callback[, thisArg]);
+                       Array.every(callback[, thisArg]);
+                   when you enter a value that is not present in the array then some() will return = " false "
+                   this is case sensetive so be carefull in writing the value.
+
+      */
+
+       var a = [10, 12, 19, 29, 30, 40, 50, 60, 70, 80, 90, 100];
+       var b = a.some(Agecheck);
+       document.write(b + "<br>");
+
+       function Agecheck(age){
+         return age >=20;
+       }
+
+       var b = a.every(Agecheck);
+       document.write(b)
+    </script>
+  </head>
+  <body></body>
+</html>
