@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>toString()_fill()_ValueOf()</title>
+    <script>
+      /*
+          toString() fill() valueOf() in javascript.
+
+          
+    */
+      document.write("<h1>toString()</h1> <br>");
+      var a = ["Muhammad", "Shakir", "Dev"];
+      var b = a.toString();
+      document.write(b + "<br>");
+      // note down one thing when uou apply toString() on an array it will return a string of all the values in the array.
+      // and after that no array mehtod wil work on this.
+
+      document.write("<h1>valueOf()</h1> <br>")
+      var  c =["Muhammad", "Shakir", "Dev"];
+      var d = c.valueOf();
+      document.write(d + "<br>");
+        // note down one thing when uou apply valueOf() on an array it will return an array of all the values in the array.
+        
+      document.write("<h1>fill()</h1> <br>")
+      var e = ["Muhammad", "Shakir", "Dev"];
+      var f = e.fill("Anum");
+      document.write(f + "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>
