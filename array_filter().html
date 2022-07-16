@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array filter()</title>
+    <script>
+        /*
+            Array filter in javascript.
+            what is array filter() in javascript?
+           
+            array filter finds the values that satisfy the provided testing function.
+            and make a new array with the values that satisfy the provided testing function.
+            syntax.
+                Array.filter(callback[, thisArg]);
+                when you enter a value that is not present in the array then filter() will return = " undefined "
+                this is case sensetive so be carefull in writing the value.
+
+        */
+            var a = [10,20,30,40,50,60,70,80,90,100];
+            document.write("The actual array is : " + a  + "<br><br>");
+            var b = a.filter(check_No);
+            document.write("Test pass array is : " + b + "<br>");
+            function check_No(valid){
+                return valid >= 40;
+            }
+    </script>
+</head>
+<body>    
+</body>
+</html>
